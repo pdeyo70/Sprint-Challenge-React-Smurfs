@@ -35,13 +35,13 @@ class App extends Component {
         {/* <SmurfForm />
         <Smurfs smurfs={this.state.smurfs} /> */}
         <ul className="navbar">
-  <li>
-    <NavLink to="/">Home</NavLink>
-  </li>
-  <li>
-    <NavLink to="/smurf-form">Add a Smurf</NavLink>
-  </li>
-</ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/smurf-form">Add a Smurf</NavLink>
+          </li>
+        </ul>
 
         <Route exact path="/" render={props => <Smurfs {...props} smurfs={this.state.smurfs} />} />
         <Route path="/smurf-form" component= { SmurfForm } />
