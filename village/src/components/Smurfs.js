@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
 import Smurf from './Smurf';
 
+
 class Smurfs extends Component {
-  render(props) {
+  render() {
     return (
       <div className="Smurfs">
         <h1>Smurf Village</h1>
@@ -23,7 +23,7 @@ class Smurfs extends Component {
       </div>
     );
   }
-}
+};
 
 Smurf.defaultProps = {
  smurfs: [],

@@ -23,17 +23,17 @@ class App extends Component {
         .catch((err) => console.log("A mistake has been made!", err))
   }
 
-  componentDidUpdate(){
-    axios.get('http://localhost:3333/smurfs')
+  componentDidUpdate(prevState){
+    if (prevState.name !== this.state.name){
+      axios.get('http://localhost:3333/smurfs')
         .then(res => this.setState({smurfs: res.data}) )
         .catch((err) => console.log("A mistake has been made!", err))
+    }
   }
 
   render() {
     return (
       <div className="App">
-        {/* <SmurfForm />
-        <Smurfs smurfs={this.state.smurfs} /> */}
         <ul className="navbar">
           <li>
             <NavLink to="/">Home</NavLink>

@@ -3,6 +3,7 @@
 }
 
 body {
+  /*background-image: url("C:\Users\pdeyonghe\Documents\GitHub\Sprint-Challenge-React-Smurfs\village\public\smurfscover.jpg");*/
   background-color: #224de3;
   color: white;
 }
@@ -22,7 +23,7 @@ ul {
 
 li {
   border: 1px solid white;
-  border-radius: 10%;
+  border-radius: 60%;
   padding: 20px;
   background-color: white;
 
